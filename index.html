@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anmol Shetty - Interactive Data Analyst Portfolio">
+    <meta name="author" content="Anmol Shetty">
+    <title>Anmol Shetty - Data Analyst Portfolio</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/game.css">
+    <link rel="stylesheet" href="./styles/components.css">
+</head>
+<body>
+    <!-- ==================== LOADING SCREEN ==================== -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <h1 class="loading-title">INITIALIZING PORTFOLIO.SYS</h1>
+            <div class="loading-bar">
+                <div id="loading-progress" class="loading-progress"></div>
+            </div>
+            <p class="loading-text">Press any key to enter the grid...</p>
+        </div>
+    </div>
+
+    <!-- ==================== GAME CANVAS ==================== -->
+    <canvas id="game-canvas"></canvas>
+
+    <!-- ==================== HUD OVERLAY ==================== -->
+    <div id="hud" class="hud">
+        <div class="hud-top">
+            <div class="zone-info">
+                <div id="zone-label" class="zone-label">EXPLORATION MODE</div>
+                <div id="zone-subtitle" class="zone-subtitle">Navigate to zones to unlock content</div>
+            </div>
+            <div class="xp-info">
+                <div class="xp-label">EXPLORATION: <span id="xp-value">0</span>%</div>
+                <div class="xp-bar">
+                    <div id="xp-fill" class="xp-fill"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hud-bottom">
+            <div class="controls-hint">
+                <div>⌨️ WASD / ARROWS - Navigate</div>
+                <div>🖱️ SHIFT - Sprint</div>
+                <div>🎯 Enter zones to unlock content</div>
+                <div>⏸️ ESC - Pause</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== OVERLAY CONTAINER ==================== -->
+    <!-- Portfolio overlays will be loaded here dynamically -->
+    <div id="overlay-container"></div>
+
+    <!-- ==================== TOAST CONTAINER ==================== -->
+    <!-- Toast notifications will appear here -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- ==================== THREE.JS LIBRARY ==================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- ==================== CORE SYSTEMS ==================== -->
+    <!-- Load in specific order - these depend on each other -->
+    <script src="./js/core/config.js"></script>
+    <script src="./js/core/renderer.js"></script>
+    <script src="./js/core/scene.js"></script>
+    <script src="./js/core/input.js"></script>
+    <script src="./js/core/loop.js"></script>
+    <script src="./js/core/load.js"></script>
+    <!-- audio.js is optional and not loaded for MVP -->
+    
+    <!-- ==================== WORLD ELEMENTS ==================== -->
+    <script src="./js/world/grid.js"></script>
+    <script src="./js/world/bike.js"></script>
+    <script src="./js/world/zones.js"></script>
+    <script src="./js/world/trail.js"></script>
+    <!-- effects.js is optional and not loaded for MVP -->
+    
+    <!-- ==================== GAME LOGIC ==================== -->
+    <script src="./js/game/state.js"></script>
+    <script src="./js/game/triggers.js"></script>
+    <script src="./js/game/rules.js"></script>
+    
+    <!-- ==================== UI SYSTEMS ==================== -->
+    <script src="./js/ui/hud.js"></script>
+    <script src="./js/ui/overlays.js"></script>
+    <script src="./js/ui/toasts.js"></script>
+    <script src="./js/ui/theme.js"></script>
+    
+    <!-- ==================== MAIN BOOTSTRAP ==================== -->
+    <!-- This must be loaded LAST - it initializes everything -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+{
+  "projects": [
+    {
+      "id": "expense-management",
+      "title": "Expense Management System",
+      "icon": "💰",
+      "tagline": "Secure Oracle-based financial tracking platform",
+      "description": "Built a comprehensive expense management system with automated validation, role-based access controls, and real-time reporting capabilities. Designed 15+ relational tables, views, and stored procedures to handle transactional data efficiently.",
+      "challenge": "Manual expense tracking was causing 5+ hours per week overhead and frequent data inconsistencies, affecting financial decision-making.",
+      "solution": "Implemented an automated Oracle database system with SQL-based validation, ETL processes, and role-based security controls.",
+      "impact": [
+        "30% faster reporting time",
+        "80% reduction in data disruptions",
+        "Improved data integrity across all financial records",
+        "Automated validation processes"
+      ],
+      "metrics": {
+        "time_saved": "30%",
+        "error_reduction": "80%",
+        "tables_created": 15
+      },
+      "technologies": ["Oracle", "SQL", "ETL", "Python", "Data Modeling"],
+      "category": "Data Engineering",
+      "date": "2023"
+    },
+    {
+      "id": "analytics-automation",
+      "title": "Production Analytics Automation Workflow",
+      "icon": "📊",
+      "tagline": "End-to-end automated KPI reporting system",
+      "description": "Developed a comprehensive workflow automation system using n8n to integrate multiple data sources including APIs, spreadsheets, and email systems. Built dynamic ETL pipelines with intelligent error detection and automated escalation.",
+      "challenge": "Manual KPI reporting was time-consuming, error-prone, and delayed critical business insights by days.",
+      "solution": "Created automated workflows that pull data from multiple sources, process it through ETL pipelines, and deliver real-time insights via dashboards and alerts.",
+      "impact": [
+        "Replaced manual reporting with full automation",
+        "Real-time KPI tracking and alerts",
+        "Automated error detection and escalation",
+        "Enhanced data reliability across systems"
+      ],
+      "metrics": {
+        "automation": "100%",
+        "delivery": "Real-time"
+      },
+      "technologies": ["n8n", "APIs", "ETL", "Excel", "Slack", "Automation"],
+      "category": "Process Automation",
+      "date": "2023"
+    },
+    {
+      "id": "hospital-platform",
+      "title": "Hospital Operations Management System",
+      "icon": "🏥",
+      "tagline": "Full-stack HIPAA-compliant healthcare platform",
+      "description": "Built a comprehensive full-stack platform to automate hospital scheduling, records management, and staff workflows. Implemented robust role-based access controls to ensure HIPAA compliance while improving operational efficiency.",
+      "challenge": "Manual scheduling and records management was creating bottlenecks, taking 25% more time than necessary and delaying critical responses.",
+      "solution": "Developed a full-stack solution with React frontend, Django backend, and SQL database, featuring automated workflows and role-based security.",
+      "impact": [
+        "25% reduction in manual effort",
+        "40% faster response time for critical events",
+        "HIPAA-compliant security implementation",
+        "Improved data accessibility across teams"
+      ],
+      "metrics": {
+        "efficiency_gain": "25%",
+        "response_improvement": "40%"
+      },
+      "technologies": ["React", "Django", "SQL", "HIPAA", "Full-Stack"],
+      "category": "Full-Stack Development",
+      "date": "2023"
+    }
+  ]
+}

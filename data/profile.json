@@ -1,0 +1,51 @@
+{
+  "name": "Anmol Shetty",
+  "title": "Data Analyst & Engineer",
+  "tagline": "Transforming complex data into actionable insights",
+  "location": "Boston, MA",
+  "availability": "Available for full-time opportunities starting December 2026",
+  "contact": {
+    "email": "shetty.anm@northeastern.edu",
+    "phone": "+1 (667) 261-4166",
+    "linkedin": "https://linkedin.com/in/anmolshetty26",
+    "github": "https://github.com/anmolshetty02"
+  },
+  "education": [
+    {
+      "institution": "Northeastern University",
+      "location": "Boston, MA",
+      "degree": "Master of Science in Information Systems",
+      "duration": "Sep 2024 - Dec 2026",
+      "coursework": [
+        "Database Management & Modeling",
+        "Application Engineering and Development",
+        "Web Development",
+        "Data Science"
+      ]
+    },
+    {
+      "institution": "KLE Technological University",
+      "location": "Hubballi, India",
+      "degree": "Bachelor of Engineering in Computer Science",
+      "duration": "Aug 2019 - May 2023",
+      "coursework": [
+        "SQL",
+        "AI/ML Programming",
+        "Database Management",
+        "Data Mining and Analysis",
+        "Machine Learning"
+      ]
+    }
+  ],
+  "about": {
+    "summary": "I'm a graduate student pursuing a Master's in Information Systems at Northeastern University, specializing in data engineering and analytics. I transform complex data into actionable insights that drive business decisions.",
+    "mission": "Help organizations unlock the full potential of their data through scalable engineering solutions, automated workflows, and compelling visualizations.",
+    "expertise": "With hands-on experience from healthcare analytics at Medicodio and manufacturing quality systems at Spicer India, I've built automated pipelines, optimized data processing, and delivered dashboard solutions that improve decision-making speed by up to 40%."
+  },
+  "stats": {
+    "efficiency_improvement": 40,
+    "cost_reduction": 30,
+    "records_analyzed": "50K+",
+    "error_reduction": 80
+  }
+}

@@ -1,0 +1,230 @@
+/* ==================== GAME UI & HUD ==================== */
+/* On-screen game interface elements */
+
+.hud {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: var(--z-hud);
+    pointer-events: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* ==================== HUD TOP ==================== */
+.hud-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+/* Zone Information */
+.zone-info {
+    flex: 1;
+}
+
+.zone-label {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--color-primary);
+    text-shadow: var(--glow-primary);
+    margin-bottom: 0.5rem;
+    animation: pulse 2s ease-in-out infinite;
+    letter-spacing: 2px;
+}
+
+.zone-subtitle {
+    font-size: 1rem;
+    color: var(--color-text-dim);
+    text-shadow: 0 0 5px var(--color-primary);
+}
+
+/* XP Progress */
+.xp-info {
+    text-align: right;
+    min-width: 250px;
+}
+
+.xp-label {
+    font-size: 1rem;
+    color: var(--color-secondary);
+    text-shadow: var(--glow-secondary);
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.xp-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 0, 255, 0.2);
+    border: 1px solid var(--color-secondary);
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: var(--glow-secondary);
+}
+
+.xp-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-secondary), var(--color-primary));
+    width: 0%;
+    transition: width 0.8s cubic-bezier(0.4, 0.0, 0.2, 1);
+    box-shadow: var(--glow-secondary);
+}
+
+/* ==================== HUD BOTTOM ==================== */
+.hud-bottom {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    right: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* Controls Hint */
+.controls-hint {
+    font-size: 0.9rem;
+    color: var(--color-primary);
+    text-shadow: 0 0 5px var(--color-primary);
+    line-height: 1.6;
+}
+
+.controls-hint div {
+    margin: 0.3rem 0;
+    opacity: 0.8;
+}
+
+/* ==================== TOAST NOTIFICATIONS ==================== */
+.toast-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: var(--z-toast);
+    pointer-events: none;
+}
+
+.toast {
+    background: rgba(0, 20, 40, 0.95);
+    border: 2px solid var(--color-primary);
+    border-radius: 10px;
+    padding: 1.5rem 2rem;
+    margin: 1rem 0;
+    box-shadow: var(--glow-intense);
+    animation: toastIn 0.5s ease, toastOut 0.5s ease 2.5s;
+    text-align: center;
+}
+
+.toast-title {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    text-shadow: var(--glow-primary);
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.toast-message {
+    font-size: 1rem;
+    color: var(--color-text-dim);
+}
+
+.toast-xp {
+    color: var(--color-secondary);
+    font-weight: bold;
+    text-shadow: var(--glow-secondary);
+}
+
+@keyframes toastIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8) translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes toastOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+/* ==================== MINIMAP (Future Feature) ==================== */
+.minimap {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    width: 200px;
+    height: 200px;
+    background: rgba(0, 20, 40, 0.8);
+    border: 2px solid var(--color-primary);
+    border-radius: 10px;
+    box-shadow: var(--glow-primary);
+    display: none; /* Hidden for MVP */
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 1024px) {
+    .hud-top {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .xp-info {
+        text-align: left;
+        width: 100%;
+    }
+    
+    .zone-label {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hud-top {
+        padding: 1rem;
+    }
+    
+    .hud-bottom {
+        bottom: 1rem;
+        left: 1rem;
+        right: 1rem;
+    }
+    
+    .zone-label {
+        font-size: 1.5rem;
+    }
+    
+    .controls-hint {
+        font-size: 0.75rem;
+    }
+    
+    .toast {
+        padding: 1rem 1.5rem;
+    }
+    
+    .toast-title {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .controls-hint {
+        display: none;
+    }
+    
+    .zone-subtitle {
+        font-size: 0.85rem;
+    }
+}

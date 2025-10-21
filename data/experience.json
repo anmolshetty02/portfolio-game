@@ -1,0 +1,80 @@
+{
+  "experiences": [
+    {
+      "id": "medicodio",
+      "company": "Medicodio",
+      "logo": "🏥",
+      "role": "Project Intern - Healthcare Analytics",
+      "type": "Internship",
+      "location": "Remote",
+      "duration": "June 2022 - December 2022",
+      "industry": "Healthcare Technology",
+      "summary": "Automated clinical data processing and reporting systems, delivering significant efficiency improvements in medical coding workflows.",
+      "challenge": "Manual patient report classification into CDC/NCHS medical codes was creating inefficiencies, taking excessive time and resulting in 27% inconsistent accuracy across clinical coding workflows.",
+      "solution": "Engineered automated classification pipeline using Python and PySpark, developed data validation scripts, and created interactive Tableau dashboards for quality tracking.",
+      "responsibilities": [
+        "Automated patient report classification into CDC/NCHS medical codes",
+        "Developed Python-based data validation and standardization scripts",
+        "Optimized large-scale data processing with PySpark and SQL",
+        "Designed interactive Tableau dashboards for data quality tracking",
+        "Collaborated with analytics teams on end-to-end automation solutions"
+      ],
+      "impact": [
+        "30% reduction in manual reporting effort",
+        "27% improvement in code mapping precision",
+        "40% faster pipeline execution time",
+        "Enabled near real-time data migration",
+        "Accelerated decision-making through real-time dashboards"
+      ],
+      "metrics": {
+        "efficiency_gain": 30,
+        "accuracy_improvement": 27,
+        "speed_increase": 40
+      },
+      "technologies": ["Python", "PySpark", "SQL", "Tableau", "ETL", "Data Validation"],
+      "achievements": [
+        "Delivered automated solution that processed thousands of clinical records",
+        "Improved data quality across entire healthcare coding system",
+        "Created dashboards used daily by medical coding teams"
+      ]
+    },
+    {
+      "id": "spicer-india",
+      "company": "Spicer India Pvt Limited",
+      "logo": "🏭",
+      "role": "Project Intern - Manufacturing Analytics",
+      "type": "Internship",
+      "location": "India",
+      "duration": "January 2022 - May 2022",
+      "industry": "Automotive Manufacturing",
+      "summary": "Built AI-powered quality assurance systems and real-time analytics platforms for automotive manufacturing operations.",
+      "challenge": "Quality assurance for automotive drive shaft production relied on manual inspection of 50,000+ images, leading to delayed defect detection and increased production downtime.",
+      "solution": "Developed CNN-based automated defect detection system, streamlined data preprocessing with PySpark and Snowflake, and built real-time analytics dashboards.",
+      "responsibilities": [
+        "Analyzed 50K+ QA inspection images to identify early material flaws",
+        "Automated defect-detection pipelines using Python and CNNs",
+        "Streamlined data preprocessing workflows with PySpark and Snowflake",
+        "Designed Streamlit QA dashboards for production trend visualization",
+        "Developed IoT proof-of-concept for real-time defect classification"
+      ],
+      "impact": [
+        "20% improvement in defect detection accuracy",
+        "Reduced production failures and equipment downtime",
+        "Enabled near real-time analytics across manufacturing systems",
+        "Enhanced cross-team collaboration through visual dashboards",
+        "Demonstrated scalability for smart manufacturing analytics"
+      ],
+      "metrics": {
+        "images_analyzed": "50K+",
+        "accuracy_improvement": 20,
+        "processing": "Real-time"
+      },
+      "technologies": ["Python", "CNN", "PySpark", "Snowflake", "Streamlit", "IoT", "Computer Vision"],
+      "achievements": [
+        "Built first AI-powered QA system for the production line",
+        "Processed and analyzed over 50,000 inspection images",
+        "Prototyped IoT system for real-time manufacturing intelligence"
+      ]
+    }
+  ]
+}

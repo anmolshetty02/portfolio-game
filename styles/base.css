@@ -1,0 +1,211 @@
+/* ==================== BASE STYLES ==================== */
+/* Reset and foundational styles for the TRON portfolio */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Color Palette */
+    --color-bg: #000000;
+    --color-primary: #00ffff;
+    --color-secondary: #ff00ff;
+    --color-accent: #00ff00;
+    --color-warning: #ffff00;
+    --color-text: #ffffff;
+    --color-text-dim: #66ffff;
+    
+    /* Glow Effects */
+    --glow-primary: 0 0 10px var(--color-primary), 0 0 20px var(--color-primary);
+    --glow-secondary: 0 0 10px var(--color-secondary), 0 0 20px var(--color-secondary);
+    --glow-intense: 0 0 20px var(--color-primary), 0 0 40px var(--color-primary), 0 0 60px var(--color-primary);
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    
+    /* Z-Index Layers */
+    --z-game: 1;
+    --z-hud: 100;
+    --z-overlay: 200;
+    --z-toast: 300;
+    --z-loading: 1000;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    background: var(--color-bg);
+    color: var(--color-text);
+    cursor: crosshair;
+}
+
+/* ==================== LOADING SCREEN ==================== */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: var(--z-loading);
+    transition: opacity var(--transition-slow);
+}
+
+.loading-screen.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.loading-content {
+    text-align: center;
+    max-width: 600px;
+    padding: 2rem;
+}
+
+.loading-title {
+    font-size: 3rem;
+    color: var(--color-primary);
+    text-shadow: var(--glow-primary);
+    margin-bottom: 2rem;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { 
+        opacity: 1;
+        text-shadow: var(--glow-primary);
+    }
+    50% { 
+        opacity: 0.7;
+        text-shadow: var(--glow-intense);
+    }
+}
+
+.loading-bar {
+    width: 100%;
+    height: 4px;
+    background: rgba(0, 255, 255, 0.2);
+    border: 1px solid var(--color-primary);
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    box-shadow: var(--glow-primary);
+}
+
+.loading-progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    width: 0%;
+    transition: width 0.3s ease;
+    box-shadow: var(--glow-primary);
+}
+
+.loading-text {
+    font-size: 1.2rem;
+    color: var(--color-secondary);
+    text-shadow: var(--glow-secondary);
+    animation: blink 1.5s ease-in-out infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+/* ==================== CANVAS ==================== */
+#game-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: var(--z-game);
+    display: block;
+}
+
+/* ==================== SCROLLBAR ==================== */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+    border-radius: 5px;
+    box-shadow: var(--glow-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-secondary);
+    box-shadow: var(--glow-secondary);
+}
+
+/* ==================== UTILITY CLASSES ==================== */
+.hidden {
+    display: none !important;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.slide-up {
+    animation: slideUp 0.5s ease;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ==================== TEXT EFFECTS ==================== */
+.glow-text {
+    text-shadow: var(--glow-primary);
+}
+
+.glow-text-secondary {
+    text-shadow: var(--glow-secondary);
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+    .loading-title {
+        font-size: 2rem;
+    }
+    
+    .loading-text {
+        font-size: 1rem;
+    }
+}

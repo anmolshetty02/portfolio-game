@@ -1,0 +1,210 @@
+{
+  "skillCategories": [
+    {
+      "id": "programming",
+      "name": "Programming Languages",
+      "icon": "💻",
+      "color": "#00ffff",
+      "skills": [
+        {
+          "name": "SQL",
+          "proficiency": 95,
+          "yearsOfExperience": 4,
+          "description": "Advanced query optimization, stored procedures, complex joins"
+        },
+        {
+          "name": "Python",
+          "proficiency": 90,
+          "yearsOfExperience": 4,
+          "description": "Data processing, automation, scripting, ML pipelines"
+        },
+        {
+          "name": "R",
+          "proficiency": 75,
+          "yearsOfExperience": 2,
+          "description": "Statistical analysis, data visualization, modeling"
+        },
+        {
+          "name": "Java",
+          "proficiency": 70,
+          "yearsOfExperience": 2,
+          "description": "Backend development, data structures, OOP"
+        },
+        {
+          "name": "C++",
+          "proficiency": 65,
+          "yearsOfExperience": 2,
+          "description": "Performance-critical applications, algorithms"
+        },
+        {
+          "name": "Bash",
+          "proficiency": 80,
+          "yearsOfExperience": 3,
+          "description": "Shell scripting, automation, system administration"
+        }
+      ]
+    },
+    {
+      "id": "databases",
+      "name": "Databases & Data Warehousing",
+      "icon": "🗄️",
+      "color": "#ff00ff",
+      "skills": [
+        {
+          "name": "Snowflake",
+          "proficiency": 85,
+          "yearsOfExperience": 2,
+          "description": "Cloud data warehousing, optimization, ELT pipelines"
+        },
+        {
+          "name": "Oracle",
+          "proficiency": 85,
+          "yearsOfExperience": 2,
+          "description": "Enterprise database management, PL/SQL, performance tuning"
+        },
+        {
+          "name": "MongoDB",
+          "proficiency": 75,
+          "yearsOfExperience": 2,
+          "description": "NoSQL database design, aggregation pipelines"
+        },
+        {
+          "name": "Hadoop (HDFS)",
+          "proficiency": 70,
+          "yearsOfExperience": 1,
+          "description": "Big data storage, distributed computing"
+        },
+        {
+          "name": "AWS S3",
+          "proficiency": 80,
+          "yearsOfExperience": 2,
+          "description": "Cloud storage, data lakes, object storage"
+        },
+        {
+          "name": "AWS Glue",
+          "proficiency": 75,
+          "yearsOfExperience": 1,
+          "description": "ETL service, data cataloging, serverless processing"
+        },
+        {
+          "name": "AWS Redshift",
+          "proficiency": 75,
+          "yearsOfExperience": 1,
+          "description": "Data warehousing, columnar storage, analytics"
+        }
+      ]
+    },
+    {
+      "id": "analytics",
+      "name": "Analytics & Visualization",
+      "icon": "📊",
+      "color": "#00ff00",
+      "skills": [
+        {
+          "name": "Tableau",
+          "proficiency": 85,
+          "yearsOfExperience": 3,
+          "description": "Interactive dashboards, data storytelling, advanced calculations"
+        },
+        {
+          "name": "Power BI",
+          "proficiency": 80,
+          "yearsOfExperience": 2,
+          "description": "Business intelligence, DAX, report building"
+        },
+        {
+          "name": "AWS QuickSight",
+          "proficiency": 75,
+          "yearsOfExperience": 1,
+          "description": "Cloud BI, ML-powered insights, embedded analytics"
+        },
+        {
+          "name": "Excel",
+          "proficiency": 90,
+          "yearsOfExperience": 5,
+          "description": "Advanced formulas, pivot tables, VBA, data analysis"
+        },
+        {
+          "name": "Pandas",
+          "proficiency": 90,
+          "yearsOfExperience": 3,
+          "description": "Data manipulation, cleaning, transformation in Python"
+        },
+        {
+          "name": "NumPy",
+          "proficiency": 85,
+          "yearsOfExperience": 3,
+          "description": "Numerical computing, array operations, scientific computing"
+        }
+      ]
+    },
+    {
+      "id": "engineering",
+      "name": "Data Engineering & Processing",
+      "icon": "⚙️",
+      "color": "#ffff00",
+      "skills": [
+        {
+          "name": "Apache Spark",
+          "proficiency": 85,
+          "yearsOfExperience": 2,
+          "description": "Large-scale data processing, distributed computing, PySpark"
+        },
+        {
+          "name": "ETL/ELT Development",
+          "proficiency": 90,
+          "yearsOfExperience": 3,
+          "description": "Data pipeline design, orchestration, automation"
+        },
+        {
+          "name": "Workflow Automation",
+          "proficiency": 85,
+          "yearsOfExperience": 2,
+          "description": "Process automation, scheduling, monitoring"
+        },
+        {
+          "name": "Data Modeling",
+          "proficiency": 85,
+          "yearsOfExperience": 3,
+          "description": "Schema design, normalization, dimensional modeling"
+        },
+        {
+          "name": "API Integration",
+          "proficiency": 80,
+          "yearsOfExperience": 2,
+          "description": "RESTful APIs, data integration, webhooks"
+        },
+        {
+          "name": "Process Optimization",
+          "proficiency": 85,
+          "yearsOfExperience": 3,
+          "description": "Performance tuning, efficiency improvements, cost reduction"
+        }
+      ]
+    }
+  ],
+  "additionalSkills": {
+    "softSkills": [
+      "Problem Solving",
+      "Data Storytelling",
+      "Cross-functional Collaboration",
+      "Project Management",
+      "Communication",
+      "Critical Thinking"
+    ],
+    "tools": [
+      "Git",
+      "Docker",
+      "Jupyter",
+      "VS Code",
+      "n8n",
+      "Streamlit"
+    ],
+    "methodologies": [
+      "Agile",
+      "Data-Driven Decision Making",
+      "Requirements Gathering",
+      "Data Quality Management"
+    ]
+  }
+}

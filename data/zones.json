@@ -1,0 +1,85 @@
+{
+  "zones": [
+    {
+      "id": "about",
+      "name": "ABOUT",
+      "subtitle": "Who I Am",
+      "position": {
+        "x": -40,
+        "y": 0.25,
+        "z": -40
+      },
+      "radius": 10,
+      "color": "#00ffff",
+      "markerType": "cylinder",
+      "overlayId": "about",
+      "xpReward": 25,
+      "description": "Learn about my background and expertise"
+    },
+    {
+      "id": "projects",
+      "name": "PROJECTS",
+      "subtitle": "What I've Built",
+      "position": {
+        "x": 40,
+        "y": 0.25,
+        "z": -40
+      },
+      "radius": 10,
+      "color": "#ff00ff",
+      "markerType": "cylinder",
+      "overlayId": "projects",
+      "xpReward": 25,
+      "description": "Explore my portfolio projects"
+    },
+    {
+      "id": "experience",
+      "name": "EXPERIENCE",
+      "subtitle": "Where I've Worked",
+      "position": {
+        "x": -40,
+        "y": 0.25,
+        "z": 40
+      },
+      "radius": 10,
+      "color": "#00ff00",
+      "markerType": "cylinder",
+      "overlayId": "experience",
+      "xpReward": 25,
+      "description": "View my work history and impact"
+    },
+    {
+      "id": "contact",
+      "name": "CONTACT",
+      "subtitle": "Let's Connect",
+      "position": {
+        "x": 40,
+        "y": 0.25,
+        "z": 40
+      },
+      "radius": 10,
+      "color": "#ffff00",
+      "markerType": "cylinder",
+      "overlayId": "contact",
+      "xpReward": 25,
+      "description": "Get in touch with me"
+    },
+    {
+      "id": "skills",
+      "name": "SKILLS",
+      "subtitle": "My Tech Stack",
+      "position": {
+        "x": 0,
+        "y": 0.25,
+        "z": 0
+      },
+      "radius": 12,
+      "color": "#ff6600",
+      "markerType": "cylinder",
+      "overlayId": "skills",
+      "xpReward": 0,
+      "description": "Explore my technical skills",
+      "isCenter": true
+    }
+  ]
+}
